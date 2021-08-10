@@ -22,8 +22,7 @@ env.config();
 
 // 
 //    
-mongoose
-  .connect(
+mongoose.connect(
     process.env.MONGOURL,
     {
       useNewUrlParser: true,
