@@ -23,7 +23,7 @@ env.config();
 // 
 //    
 mongoose.connect(
-    process.env.MONGOURL,
+  process.env.MONGOURL,
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
@@ -51,4 +51,5 @@ app.use("/api", adminOrderRoute);
 
 app.listen(process.env.PORT, () => {
   console.log(`Server is running on port ${process.env.PORT}`);
+  console.log(` Server is running  ${process.env.MONGOURL}`);
 });
